@@ -62,6 +62,7 @@ QJsonObject Task::getJSONData() {
     json_obj.insert("text", this->text);
     json_obj.insert("is_overdue", this->is_overdue);
     json_obj.insert("is_completed", this->is_completed);
+    json_obj.insert("is_importance", this->is_importance);
 
     return json_obj;
 }
