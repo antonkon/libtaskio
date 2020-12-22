@@ -21,6 +21,8 @@ public:
 
     void setCompleted(bool new_completed);
 
+    void setImportance(bool new_importance);
+
     QString getTitle();
 
     QString getText();
@@ -28,6 +30,8 @@ public:
     bool getOverdue();
 
     bool getCompleted();
+
+    bool getImportance();
 
     QJsonObject getJSONData();
 
@@ -44,6 +48,8 @@ private:
     bool is_overdue = false;
     // Задачи выполнена
     bool is_completed = false;
+    // Задача важная
+    bool is_importance = false;
 };
 
 #endif // TASK_H

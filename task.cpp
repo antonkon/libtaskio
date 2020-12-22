@@ -32,6 +32,10 @@ void Task::setCompleted(bool new_completed) {
     this->is_completed = new_completed;
 }
 
+void Task::setImportance(bool new_importance) {
+    this->is_importance = new_importance;
+}
+
 QString Task::getTitle() {
     return this->title;
 }
@@ -46,6 +50,10 @@ bool Task::getOverdue() {
 
 bool Task::getCompleted() {
     return this->is_completed;
+}
+
+bool Task::getImportance() {
+    return this->is_importance;
 }
 
 QJsonObject Task::getJSONData() {
