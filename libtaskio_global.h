@@ -1,12 +1,12 @@
-#ifndef LIBTASKIO_GLOBAL_H
-#define LIBTASKIO_GLOBAL_H
+#ifndef TASKIO_GLOBAL_H
+#define TASKIO_GLOBAL_H
 
 #include <QtCore/qglobal.h>
 
 #if defined(LIBTASKIO_LIBRARY)
-#  define LIBTASKIO_EXPORT Q_DECL_EXPORT
+#  define TASKIO_EXPORT Q_DECL_EXPORT
 #else
-#  define LIBTASKIO_EXPORT Q_DECL_IMPORT
+#  define TASKIO_EXPORT Q_DECL_IMPORT
 #endif
 
-#endif // LIBTASKIO_GLOBAL_H
+#endif // TASKIO_GLOBAL_H

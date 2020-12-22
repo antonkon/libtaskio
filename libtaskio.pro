@@ -17,11 +17,13 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    task_io.cpp
+    task.cpp \
+    task_list.cpp
 
 HEADERS += \
     libtaskio_global.h \
-    task_io.h
+    task.h \
+    task_list.h
 
 # Default rules for deployment.
 unix {
