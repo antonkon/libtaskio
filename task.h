@@ -31,7 +31,9 @@ public:
 
     QJsonObject getJSONData();
 
-    friend bool operator==(const Task &a, const Task &b);
+    friend bool operator==(const Task &a, const Task &b) {
+        return a.title == b.title;
+    }
 
 private:
     QString title;

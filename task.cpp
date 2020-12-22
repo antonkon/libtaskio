@@ -57,7 +57,3 @@ QJsonObject Task::getJSONData() {
 
     return json_obj;
 }
-
-bool Task::operator==(const Task &a, const Task &b) {
-    return a.title == b.title;
-}
