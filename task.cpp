@@ -14,6 +14,7 @@ Task::Task(QJsonObject json_obj)
     this->text = json_obj["text"].toString();
     this->is_overdue = json_obj["is_overdue"].toBool();
     this->is_completed = json_obj["is_completed"].toBool();
+    this->is_importance = json_obj["is_importance"].toBool();
 }
 
 void Task::changeTitle(QString new_title) {
