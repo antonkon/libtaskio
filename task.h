@@ -11,6 +11,7 @@ class TASKIO_EXPORT Task
 public:
     Task(QString title, QString text);
     Task(QJsonObject json_obj);
+    Task(const Task &task);
 
     void changeTitle(QString new_title);
 
@@ -29,6 +30,8 @@ public:
     bool getCompleted();
 
     QJsonObject getJSONData();
+
+    friend bool operator==(const Task &a, const Task &b);
 
 private:
     QString title;

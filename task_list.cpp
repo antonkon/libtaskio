@@ -90,12 +90,6 @@ void TaskList::addTask(QString title, QString text) {
     this->list.insert(title, task);
 }
 
-void TaskList::changeTask(QString name) {
-    Task *task = nullptr;
-    task = this->list.value(name);
-    // !!!
-}
-
 void TaskList::removeTask(QString name) {
     this->list.remove(name);
 }

@@ -15,8 +15,6 @@ public:
 
     void addTask(QString title, QString text);
 
-    void changeTask(QString title);
-
     void removeTask(QString title);
 
     QStringList getListTitle();

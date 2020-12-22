@@ -2,8 +2,11 @@
 
 Task::Task(QString title, QString text) :
     title(title), text(text)
-{
-}
+{}
+
+Task::Task(const Task &task) :
+    title(task.title), text(task.text)
+{}
 
 Task::Task(QJsonObject json_obj)
 {
@@ -53,4 +56,8 @@ QJsonObject Task::getJSONData() {
     json_obj.insert("is_completed", this->is_completed);
 
     return json_obj;
+}
+
+bool Task::operator==(const Task &a, const Task &b) {
+    return a.title == b.title;
 }
